@@ -52,3 +52,20 @@ if (l > 0) {
       } else {
     println('Number is negative')
 }
+
+// Regular expression
+emailPattern = /[_A-Za-z0-9-]+(.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(.[A-Za-z0-9]+)*(.[A-Za-z]{2,})/
+email = 'milica@mimi.com'
+
+def check = email ==~ emailPattern
+println(check)
+
+
+// Null safe operator
+String s = null
+println s?.lenght
+
+
+// Ternary operator
+def output1 = (1>0) ? "1 is greater than 0" : "1 is not greater"
+println output1
